@@ -1,0 +1,126 @@
+<!-- SECTION ABOUT -->
+<section id="about">
+    <h2>О нашей пекарне</h2>
+    <p>Наша пекарня готовит свежий хлеб и выпечку каждый день. Мы используем только натуральные ингредиенты.</p>
+    <figure>
+        <img src="../img/bakery_interior.jpg" alt="Интерьер пекарни" width="600" height="400">
+        <figcaption>Теплый и уютный интерьер нашей пекарни</figcaption>
+    </figure>
+</section>
+
+<!-- SECTION PRODUCTS -->
+<section id="products">
+    <h2>Наши продукты</h2>
+    
+    <h3>Популярные сорта хлеба</h3>
+    <table>
+    <caption>Сорта хлеба и цены</caption>
+    <thead>
+        <tr>
+            <th scope="col">Название</th>
+            <th scope="col">Вес (г)</th>
+            <th scope="col">Цена (₸)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Бородинский</th>
+            <td>500</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <th scope="row">Белый</th>
+            <td>450</td>
+            <td>850</td>
+        </tr>
+    </tbody>
+    </table>
+
+
+    <h3>Список десертов</h3>
+    <ul>
+        <li>Пирожное "Эклер"</li>
+        <li>Булочка с корицей</li>
+        <li>Маффин с шоколадом</li>
+    </ul>
+
+    <h3>Особые предложения</h3>
+    <ol>
+        <li>Хлеб дня</li>
+        <li>Сезонный десерт</li>
+        <li>Акция "Купи 2 — третий в подарок"</li>
+    </ol>
+
+    <h3>Ингредиенты</h3>
+    <dl>
+        <dt>Мука</dt>
+        <dd>Только высшего сорта</dd>
+        <dt>Дрожжи</dt>
+        <dd>Свежие и активные</dd>
+        <dt>Соль</dt>
+        <dd>Морская натуральная</dd>
+    </dl>
+
+    <div class="product-images">
+        <img src="../img/bread1.jpg" alt="Бородинский хлеб" width="200" height="200">
+        <img src="../img/bread2.jpg" alt="Белый хлеб" width="200" height="200">
+        <img src="../img/bread3.jpg" alt="Ржаной хлеб" width="200" height="200">
+        <img src="../img/bread4.jpg" alt="Булочки" width="200" height="200">
+    </div>
+</section>
+
+<!-- ASIDE -->
+<aside>
+    <h2>Новости</h2>
+    <p>Каждую неделю новые акции на свежую выпечку!</p>
+</aside>
+
+<!-- SECTION CONTACT / ORDER FORM -->
+<!-- SECTION CONTACT / ORDER FORM -->
+<section id="form">
+    <h2>Сделать заказ</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Ваши данные</legend>
+            
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required minlength="2">
+
+            <label for="surname">Фамилия:</label>
+            <input type="text" id="surname" name="surname" required minlength="2">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" pattern="[\d\+\-\s\(\)]{6,}">
+
+            <label for="address">Адрес:</label>
+            <input type="text" id="address" name="address" required minlength="5">
+        </fieldset>
+
+        <fieldset>
+            <legend>Заказ</legend>
+            
+            <label for="product">Продукт:</label>
+            <select id="product" name="product">
+                <option value="bread">Хлеб</option>
+                <option value="bun">Булочки</option>
+                <option value="cake">Десерты</option>
+            </select>
+
+            <label for="qty">Количество:</label>
+            <input type="number" id="qty" name="qty" min="1" max="20" required>
+
+            <label for="payment">Выберите способ оплаты:</label>
+            <select id="payment" name="payment" required>
+                <option value="">-- Выберите --</option>
+                <option value="cash">Наличные</option>
+                <option value="card">Банковская карта</option>
+                <option value="online">Онлайн-оплата</option>
+            </select>
+        </fieldset>
+
+        <button type="submit">Отправить заказ</button>
+    </form>
+</section>
