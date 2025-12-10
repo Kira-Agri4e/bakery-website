@@ -36,9 +36,8 @@
 <ul>
   <li><a href="#about">О нас</a></li>
   <li><a href="#products">Продукция</a></li>
-  <li><a href="#order">Заказать</a></li>
-  <li><a href="#contacts">Контакты</a></li>
-  <li><a href="#footer">Подвал</a></li>
+  <li><a href="#footer">Контакты</a></li>
+  <li><a href="#form">Заказ</a></li>
 </ul>
 Якоря ведут к реальным ID.
 
